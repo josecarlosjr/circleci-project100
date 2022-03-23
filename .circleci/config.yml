@@ -1,5 +1,7 @@
-version 2.1
+version: 2.1
 jobs:
   build:
     docker:
       - image: cimg/node:lts
+    steps:
+      - run: ls /
