@@ -2,6 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: cimg/node:lts
+      - image: cimg/terraform:lts
     steps:
       - run: ls /
+      - run: terraform --version
